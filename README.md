@@ -1,7 +1,7 @@
 # WebScrapperTest
 This is repository for Test basic Webscrapper login function
 
-## Softwares used: 
+### Softwares used
 ``` 
 Eclipse IDE 
 
@@ -21,20 +21,21 @@ Import project from cloned git repository. It is an maven project.
 
 Install TestNG plugin to eclpise if it is not installed.
 
-## Running the tests via Eclipse
+### Running the tests via Eclipse
 
 Open or navigate to TestLogin.java file and run as TestNG.
 ```
 Run As TestNG > TestLogin.java 
 ```
 
-## Running the tests via command line mvn . 
+### Running the tests via command line mvn . 
 >Navigate to Base folder when project source is extracted.
 
 ```
 mvn clean install 
 ```
-## Results
+
+### Results
 
 > If execution is done as `TestNG` then report `index.html` will be found in `test-output` folder. 
 
