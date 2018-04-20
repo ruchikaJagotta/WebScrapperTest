@@ -2,16 +2,17 @@
 This is repository for Test basic Webscrapper login function
 
 ## Softwares used: 
- 
-1.Eclipse IDE 
+``` 
+Eclipse IDE 
 
-2.Selenium Server             version 3.11.0
+Selenium Server             version 3.11.0
 
-3.Apache maven plugin         eclipse embedded
+Apache maven plugin         eclipse embedded
 
-4.ChromeDriver                Version 65.0.3325.181 (Official Build)
+ChromeDriver                Version 65.0.3325.181 (Official Build)
 
-5.TestNG                      Version 6.9.4
+TestNG                      Version 6.9.4
+```
 
 ### Environment Setup
 
@@ -33,17 +34,22 @@ Run As TestNG > TestLogin.java
 ```
 mvn clean install 
 ```
+## Results
 
-#Note: 
-In case, interactive Selenium Driver need to be tested, uncomment below section from TestLogin.java in getWebDriver() method.
+> If execution is done as `TestNG` then report `index.html` will be found in `test-output` folder. 
+
+> If execution is done as `mvn` then report `index.html` will be found in `/target/surefire-reports` folder. 
+
+### Note: In case, interactive Selenium Driver like ChromeDriver is required to test
+> Then, uncomment below section from TestLogin.java in getWebDriver() method.
 
 ```
 /*  
-    System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
-    driver = new ChromeDriver();
-  */
+   System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+   driver = new ChromeDriver();
+*/
 ```
-And comment section for HtmlUnitDriver. 
+> And comment section for HtmlUnitDriver. 
 ```
 driver = new HtmlUnitDriver(true);
 ```
